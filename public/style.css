@@ -16,6 +16,11 @@
   font-size: 1.5rem;
 }
 
+.fontSize20{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 .fontSize18 {
   font-size: 1.125rem;
 }
@@ -69,4 +74,11 @@
 
 .whiteText {
   color: #fffffa;
+}
+
+.stats{
+  background-color: #006747;
+  height: 250px;
+  width: 100%;
+  margin: 0 auto;
 }

@@ -43,6 +43,10 @@ function setup() {
       poses.length = 0;
       myp5_1.poses.length = 0;
       document.getElementById("Name").innerHTML = "Name: ";
+      document.getElementById("Age").innerHTML = "Age: ";
+      document.getElementById("Country").innerHTML = "Country: ";
+      document.getElementById("Rank").innerHTML = "Rank: ";
+      document.getElementById("Bio").innerHTML = "Bio: ";
   //    myp5_1.img.hide(); //need to really delete this
       // clear myp5_1 canvas
       addPhoto.innerHTML = "Capture Pose";
@@ -179,6 +183,10 @@ request.done(function (response){
     buffer = response[1];
 
     player_name = response[0]['Name'];
+    player_age = response[0]['Age'];
+    player_country = response[0]['Country']
+    player_rank = response[0]['Rank']
+    player_bio = response[0]['Bio']
   //  score = response[0]['Score'];
 //    Body = {'Back': response[0]['Back'],
 //            'Legs':  response[0]['Legs'],
@@ -192,6 +200,10 @@ request.done(function (response){
     myp5_1.img.hide();
 
     document.getElementById("Name").innerHTML = "Name: " + player_name;
+    document.getElementById("Age").innerHTML = "Age: " + player_age;
+    document.getElementById("Country").innerHTML = "Country: " + player_country;
+    document.getElementById("Rank").innerHTML = "World Rank: " + player_rank;
+    document.getElementById("Bio").innerHTML = "Bio: " + player_bio;
 //    document.getElementById("Score").innerHTML = "Score: " + round(100-((score*10)*100)) + "%";
     });
 }
